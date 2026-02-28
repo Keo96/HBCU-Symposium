@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=./sites.google.com/view/hbcu-symposium-2025.html" />
-    <title>HBCU Symposium 2025 Archive</title>
+    <title>Redirecting to HBCU Symposium 2025 Archive</title>
+    <script>
+      (function() {
+        var path = "/sites.google.com/view/hbcu-symposium-2025.html";
+        var host = window.location.hostname;
+        
+        // If we are on GitHub Pages, we need the repo name in the path
+        if (host.includes("github.io")) {
+          window.location.href = "/HBCU-Symposium" + path;
+        } else {
+          // If we are on Localhost or Live Server, go straight to the file
+          window.location.href = path;
+        }
+      })();
+    </script>
   </head>
   <body>
-    <p>Redirecting to the <a href="./sites.google.com/view/hbcu-symposium-2025.html">HBCU Symposium 2025 Archive</a>...</p>
+    <p>Redirecting to the <a id="fallback" href="./sites.google.com/view/hbcu-symposium-2025.html">HBCU Symposium 2025 Archive</a>...</p>
   </body>
 </html>

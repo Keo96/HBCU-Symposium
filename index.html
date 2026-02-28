@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Redirecting...</title>
     <script>
-      var repo = "/HBCU-Symposium/";
-      var target = "sites.google.com/view/hbcu-symposium-2025.html";
-      
-      // If on GitHub, use the repo path. If on Local, use root.
-      var finalUrl = window.location.hostname.includes("github.io") ? repo + target : "/" + target;
-      window.location.href = finalUrl;
+        // This detects if we are on GitHub (/HBCU-Symposium/) or Local (/)
+        var segment = window.location.pathname.split('/')[1];
+        var repoName = (segment === "HBCU-Symposium") ? "/HBCU-Symposium" : "";
+        window.location.href = repoName + "/sites.google.com/view/hbcu-symposium-2025.html";
     </script>
-  </head>
-  <body>
-    <p>Redirecting to the <a href="./sites.google.com/view/hbcu-symposium-2025.html">Archive</a>...</p>
-  </body>
+</head>
+<body>
+    <p>Redirecting to <a href="./sites.google.com/view/hbcu-symposium-2025.html">Archive</a>...</p>
+</body>
 </html>
